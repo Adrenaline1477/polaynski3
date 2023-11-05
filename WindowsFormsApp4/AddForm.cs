@@ -18,7 +18,7 @@ namespace WindowsFormsApp4
         {
             // Получаем значения полей ввода
             string documentNumber = textBox1.Text;
-            string documentType = textBox2.Text;
+            string documentType = comboBox1.Text;
             string issueDate = dateTimePicker1.Value.ToString("dd.MM.yyyy");
             string lastName = textBox3.Text;
             string firstName = textBox4.Text;
@@ -40,7 +40,6 @@ namespace WindowsFormsApp4
 
                 // Очищаем поля ввода после добавления
                 textBox1.Clear();
-                textBox2.Clear();
                 dateTimePicker1.Value = DateTime.Now;
                 textBox3.Clear();
                 textBox4.Clear();
